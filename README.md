@@ -8,6 +8,14 @@ iOS / Android 相簿相關工具
 - SaveImageToPhotoLibrary(Texture2D texture) : 將照片存放到相簿中
 - CaptureScreen() : 抓取 mainCamera 截圖
 
+## 自動處理
+
+- iOS
+
+  - 加入 Photos.framework
+  - 在 info.plist 加入 NSPhotoLibraryUsageDescription = ""
+  - 在 info.plist 加入 UIRequiresFullScreen = true
+
 ## 使用方式
 
 - 複製到專案中
