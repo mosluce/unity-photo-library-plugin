@@ -48,7 +48,6 @@ extern "C" {
             UIImageWriteToSavedPhotosAlbum(photo, nil, nil, nil);
 
 			NSFileManager *manager = [NSFileManager defaultManager];
-			NSFileManager *manager = [NSFileManager defaultManager];
             [manager removeItemAtPath:path error:nil];
         });
     }
