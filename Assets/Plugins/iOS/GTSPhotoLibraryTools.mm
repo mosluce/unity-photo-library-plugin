@@ -41,11 +41,15 @@ extern "C" {
 
     void SaveImageToPhotoLibraryC(char* imagePath) {
         NSString* path = [NSString stringWithCString:imagePath encoding:kCFStringEncodingUTF8];
-        
+
         UIImage* photo = [UIImage imageWithData:[NSData dataWithContentsOfFile:path] scale:1];
-        
+
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             UIImageWriteToSavedPhotosAlbum(photo, nil, nil, nil);
+
+			NSFileManager *manager = [NSFileManager defaultManager];
+			NSFileManager *manager = [NSFileManager defaultManager];
+            [manager removeItemAtPath:path error:nil];
         });
     }
 

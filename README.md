@@ -1,6 +1,6 @@
 # Unity 相簿工具 Plugin
 
-iOS / Android 相簿相關工具
+iOS / Android 相簿相關工具
 
 ## 目前功能
 
