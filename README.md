@@ -6,6 +6,7 @@ iOS / Android 相簿相關工具
 
 - RequestPermission(string callbackObj, string callbackFunc) : 要求相簿存取權限
 - SaveImageToPhotoLibrary(Texture2D texture) : 將照片存放到相簿中
+- CaptureScreen() : 抓取 mainCamera 截圖
 
 ## 使用方式
 
